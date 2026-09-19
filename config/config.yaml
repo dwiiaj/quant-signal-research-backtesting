@@ -9,7 +9,7 @@ data:
 
 signal:
   residual_window: 60
-  signal_horizon: 5
+  signal_horizon: 10
   residual_volatility_window: 20
   long_quantile: 0.20
   short_quantile: 0.20
@@ -32,3 +32,16 @@ risk:
   beta_window: 60
   volatility_window: 20
   annualisation_factor: 252
+
+research:
+  development_end_date: "2018-12-31"
+  validation_start_date: "2019-01-01"
+  selected_horizon: 10
+  selected_direction: "reversal"
+  candidate_horizons:
+    - 1
+    - 2
+    - 5
+    - 10
+    - 20
+    - 60
