@@ -1,0 +1,34 @@
+project:
+  name: "Quant Signal Research & Backtesting"
+  random_seed: 42
+
+data:
+  start_date: "2012-01-01"
+  end_date: "2026-09-19"
+  market_ticker: "SPY"
+
+signal:
+  residual_window: 60
+  signal_horizon: 5
+  residual_volatility_window: 20
+  long_quantile: 0.20
+  short_quantile: 0.20
+
+portfolio:
+  gross_exposure: 1.0
+  target_volatility: 0.10
+  max_position_weight: 0.05
+  dollar_neutral: true
+  beta_neutral: true
+
+costs:
+  transaction_cost_bps: 5.0
+
+validation:
+  training_years: 4
+  test_years: 1
+
+risk:
+  beta_window: 60
+  volatility_window: 20
+  annualisation_factor: 252

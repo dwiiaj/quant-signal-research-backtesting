@@ -179,3 +179,14 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Project virtual environment
+.venv/
+
+# Downloaded market data
+data/raw/*
+data/processed/*
+
+# Keep directory structure visible on GitHub
+!data/raw/.gitkeep
+!data/processed/.gitkeep
