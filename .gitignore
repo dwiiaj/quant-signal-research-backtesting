@@ -190,3 +190,7 @@ data/processed/*
 # Keep directory structure visible on GitHub
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+
+# Python cache
+__pycache__/
+*.py[cod]
